@@ -1,0 +1,20 @@
+version: 0.2
+
+env:
+  variables:
+    hugo_version: "0.52"
+
+phases:
+  install:
+    commands:
+      - wget "https://github.com/gohugoio/hugo/releases/download/v$hugo_version/hugo_$hugo_version_Linux-64bit.deb"
+      - sudo dpkg -i hugo_$hugo_version_Linux-64bit.deb
+    finally:
+      - hugo version
+  build:
+    commands:
+      - cd website-code
+      - hugo
+      - aws s3 sync public s3://$S3_BUCKET --delete --acl public-read
+    finally:
+      - echo "Deployment run finished"

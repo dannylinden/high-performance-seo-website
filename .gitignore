@@ -1,0 +1,10 @@
+.idea/
+.tfstatus
+.backup
+*.pem
+*.key
+.DS_Store
+.git
+.terraform
+provider.tf
+*.iml
