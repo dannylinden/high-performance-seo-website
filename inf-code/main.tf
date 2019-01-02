@@ -29,3 +29,11 @@ module "hugo-site" {
   ssh_pub_key = "${var.ssh_pub_key}" /* Path to the SSH Pub key for CodeCommit authentification*/
   bucket_prefix = "${var.bucket_prefix}" /* Prefix for S3 Buckets*/
 }
+
+output "nameservers" {
+  value = "${module.hugo-site.nameservers}"
+}
+
+output "git_remote_url" {
+  value = "${module.hugo-site.git_remote_url}"
+}
