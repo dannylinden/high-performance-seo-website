@@ -25,5 +25,5 @@ ssh_pub_key = "~/.ssh/id_rsa-pub"
 /* Prefix if Bucket names already in use e.g. "foo-" */
 bucket_prefix = ""
 
-/* SSL Validation Method, E-MAIL or DNS */
+/* SSL Validation Method, EMAIL or DNS */
 ssl_validation = "EMAIL"
