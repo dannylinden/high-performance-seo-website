@@ -18,10 +18,6 @@ root_domain = "example.com"
 ssh_pub_key = "~/.ssh/id_rsa-pub"
 
 
-
-
-
-
 /*
  *  Advanced Settings, change only if necessary
  */
@@ -30,4 +26,4 @@ ssh_pub_key = "~/.ssh/id_rsa-pub"
 bucket_prefix = ""
 
 /* SSL Validation Method, E-MAIL or DNS */
-ssl_validation = "E-MAIL"
+ssl_validation = "EMAIL"
