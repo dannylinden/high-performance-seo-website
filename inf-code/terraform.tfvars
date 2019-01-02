@@ -18,10 +18,6 @@ root_domain = "example.com"
 ssh_pub_key = "~/.ssh/id_rsa-pub"
 
 
-
-
-
-
 /*
  *  Advanced Settings, change only if necessary
  */
