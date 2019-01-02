@@ -8,3 +8,5 @@
 .terraform
 provider.tf
 *.iml
+inf-code/terraform.tfvars
+

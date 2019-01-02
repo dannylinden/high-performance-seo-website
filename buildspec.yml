@@ -7,8 +7,8 @@ env:
 phases:
   install:
     commands:
-      - wget "https://github.com/gohugoio/hugo/releases/download/v$hugo_version/hugo_$hugo_version_Linux-64bit.deb"
-      - sudo dpkg -i hugo_$hugo_version_Linux-64bit.deb
+      - wget "https://github.com/gohugoio/hugo/releases/download/v${hugo_version}/hugo_${hugo_version}_Linux-64bit.deb"
+      - sudo dpkg -i hugo_${hugo_version}_Linux-64bit.deb
     finally:
       - hugo version
   build:

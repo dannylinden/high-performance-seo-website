@@ -15,8 +15,7 @@ www_domain   = "www.example.com"
 root_domain = "example.com"
 
 /* Path to your public SSH Key for the Git Repository */
-ssh_pub_key = "~/.ssh/id_rsa-pub"
-
+ssh_pub_key = "~/.ssh/id_rsa.pub"
 
 /*
  *  Advanced Settings, change only if necessary
