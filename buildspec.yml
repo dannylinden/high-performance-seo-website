@@ -14,7 +14,7 @@ phases:
   build:
     commands:
       - cd website-code
-      - hugo
+      - hugo --minify
       - aws s3 sync public s3://$S3_BUCKET --delete --acl public-read
     finally:
       - echo "Deployment run finished"
